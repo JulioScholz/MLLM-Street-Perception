@@ -1,7 +1,21 @@
 [project]
 name = "mllm-street-perception"
 version = "0.1.0"
-description = "TODO"
+description = "Multimodal LLM urban safety perception experiments on the SPECS dataset"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "torch",
+    "transformers",
+    "accelerate",
+    "pandas",
+    "pillow",
+    "python-dotenv",
+    "scikit-learn",
+    "matplotlib",
+    "rich",
+    "ipykernel",
+]
+
+[tool.uv]
+package = false
