@@ -15,6 +15,7 @@ dependencies = [
     "matplotlib",
     "rich",
     "ipykernel",
+    "torchvision==0.23.0",
 ]
 
 [tool.uv]
