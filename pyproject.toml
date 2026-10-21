@@ -18,6 +18,7 @@ dependencies = [
     "torchvision==0.23.0",
     "typer>=0.27.3",
     "click>=8.5.0",
+    "tqdm>=4.70.1",
 ]
 
 [tool.uv]
