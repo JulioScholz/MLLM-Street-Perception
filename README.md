@@ -19,7 +19,7 @@ Research code for a master's thesis on urban safety perception with Multimodal L
 4. Download the dataset (`labels/` and `svi/` only) into `data/SPECS/`:
    ```bash
    uv run hf download matiasqr/specs --repo-type dataset \
-     --include "labels/*" "svi/*" \
+     --include "labels/*" --include "svi/*" \
      --local-dir data/SPECS
    ```
 
