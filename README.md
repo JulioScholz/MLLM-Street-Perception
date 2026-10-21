@@ -16,7 +16,12 @@ Research code for a master's thesis on urban safety perception with Multimodal L
    ```bash
    echo "HF_TOKEN=hf_..." > .env
    ```
-4. Place the dataset under `data/SPECS/` (gitignored).
+4. Download the dataset (`labels/` and `svi/` only) into `data/SPECS/`:
+   ```bash
+   uv run hf download matiasqr/specs --repo-type dataset \
+     --include "labels/*" "svi/*" \
+     --local-dir data/SPECS
+   ```
 
 ## Run
 
