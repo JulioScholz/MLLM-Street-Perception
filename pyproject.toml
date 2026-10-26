@@ -24,3 +24,11 @@ dependencies = [
 
 [tool.uv]
 package = false
+# torchao >=0.16 imports ScalingType from torch.nn.functional (torch >=2.11),
+# which breaks on torch 2.8. 0.14.0 is the minimum gptqmodel requires.
+constraint-dependencies = ["torchao==0.14.0"]
+
+[tool.uv.extra-build-variables]
+# gptqmodel's setup.py imports torch at build time and compiles CUDA kernels;
+# skip the compile (no matching nvcc 12.8 on the server).
+gptqmodel = { BUILD_CUDA_EXT = "0" }

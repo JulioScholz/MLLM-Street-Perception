@@ -2,6 +2,9 @@ version = 1
 revision = 3
 requires-python = ">=3.13"
 
+[manifest]
+constraints = [{ name = "torchao", specifier = "==0.14.0" }]
+
 [[package]]
 name = "accelerate"
 version = "1.12.0"
@@ -2381,11 +2384,11 @@ wheels = [
 
 [[package]]
 name = "torchao"
-version = "0.18.0"
+version = "0.14.0"
 source = { registry = "https://pypi.org/simple" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/19/55/ed9ad98f0f09d5a1124d09830043d13a39e63539f9590d2bdb6d71cbc4a4/torchao-0.18.0-cp310-abi3-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:6540b148e40ba81cbd4de86392225a076a1591146e9cebb099b3b234ba9feebe", size = 3372585, upload-time = "2026-08-03T19:43:10.993Z" },
-    { url = "https://files.pythonhosted.org/packages/c4/4d/485477bb8f05bd501016059c6d8abd742f830cb1b24ab7704e086c7cc35a/torchao-0.18.0-py3-none-any.whl", hash = "sha256:5c2b4485341bf28b7fed2c4fc95b9f298e209f41685350f067de85527a05585e", size = 1369798, upload-time = "2026-08-03T19:43:12.649Z" },
+    { url = "https://files.pythonhosted.org/packages/28/5a/72d932efcff037fea3466b0e0c9a82d280e9083da10fe79af8505ac71348/torchao-0.14.0-cp310-abi3-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:3508151beb43ab6dd0f70427389f387cf1cd367f2326e9c6102133991e147b67", size = 7197166, upload-time = "2025-10-13T21:16:39.029Z" },
+    { url = "https://files.pythonhosted.org/packages/6f/f0/975479131e6d8365854b97334688dd156a6d67824cc24b65a6e661e93800/torchao-0.14.0-py3-none-any.whl", hash = "sha256:c5a939e035f8cc0493f2bb18a3d01c1db8139662f7fcf49a6df84366218aa95e", size = 1067582, upload-time = "2025-10-13T21:16:40.985Z" },
 ]
 
 [[package]]
