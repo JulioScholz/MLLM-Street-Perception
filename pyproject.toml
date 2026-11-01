@@ -20,6 +20,7 @@ dependencies = [
     "click>=8.5.0",
     "tqdm>=4.70.1",
     "vllm==0.32.0 ; sys_platform == 'linux'",
+    "openskill>=6.2.0",
 ]
 
 [tool.uv]
